@@ -1,0 +1,110 @@
+@each $name, $value in $RobotoWeights {
+  .roboto-#{$name} {
+    font-weight: $value;
+  }
+}
+
+@each $name, $value in $OpenSansWeights {
+  .opensans-#{$name} {
+    font-weight: $value;
+  }
+}
+
+.text-light {
+  color: $textLight;
+}
+
+.text-black {
+  color: $textBlack;
+}
+
+.text-dark1 {
+  color: $textDark1;
+}
+
+.text-dark2 {
+  color: $textDark2;
+}
+
+.primary-bgcolor {
+  background-color: $primaryColor;
+}
+
+.primary-light-bgcolor {
+  background-color: $primaryColorLight;
+}
+
+.secondary-bgcolor {
+  background-color: $secondaryColor;
+}
+
+.secondary-light-bgcolor {
+  background-color: $secondaryColorLight;
+}
+
+.secondary-bg-bgcolor {
+  background-color: $secondaryColorBg;
+}
+
+.secondary-dark-bgcolor {
+  background-color: $secondaryColorDark;
+}
+
+.secondary-text-bgcolor {
+  background-color: $secondaryColorText;
+}
+
+.secondary-text {
+  color: $secondaryColorText;
+}
+
+.default-border-radius {
+  border-radius: $defaultBorderRadius;
+}
+
+.roboto {
+  font-family: $RobotoFont;
+}
+
+.opensans {
+  font-family: $OpenSansFont;
+}
+
+// .icon-btn {
+//   img,
+//   svg {
+//     width: 30px;
+//   }
+// }
+
+// .overflow-hidden {
+//   overflow: hidden;
+// }
+
+// @include media-max-md {
+//   .overflow-md-hidden {
+//     overflow: hidden;
+//   }
+// }
+
+// @include media-md {
+//   .pad-fix {
+//     padding-right: 80px;
+//   }
+// }
+
+// .w-100 {
+//   width: 100%;
+// }
+
+// .h-100 {
+//   height: 100%;
+// }
+
+// .flex-1 {
+//   flex: 1;
+// }
+
+// .text-center {
+//   text-align: center;
+// }

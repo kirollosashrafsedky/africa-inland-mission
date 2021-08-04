@@ -1,0 +1,50 @@
+.roboto {
+  font-family: $RobotoFont;
+}
+
+.open-sans {
+  font-family: $OpenSansFont;
+}
+
+.roboto-medium {
+  font-family: $RobotoFont;
+  font-weight: map-get($RobotoWeights, 'medium');
+}
+
+.roboto-bold {
+  font-family: $RobotoFont;
+  font-weight: map-get($RobotoWeights, 'bold');
+}
+
+.open-sans-regular {
+  font-family: $OpenSansFont;
+  font-weight: map-get($OpenSansWeights, 'regular');
+}
+
+.light-text {
+  color: $textLight;
+}
+
+.white-text {
+  color: $textWhite;
+}
+
+.black-text {
+  color: $textBlack;
+}
+
+.text-dark1 {
+  color: $textDark1;
+}
+
+.text-dark2 {
+  color: $textDark2;
+}
+
+.secondary-text {
+  color: $secondaryColorText;
+}
+
+.primary-text {
+  color: $primaryColor;
+}

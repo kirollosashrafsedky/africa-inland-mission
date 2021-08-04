@@ -1,0 +1,41 @@
+// colors
+$textWhite: #fff;
+$textLight: #f2f5f3;
+$textBlack: #000;
+$textDark1: #1d311f;
+$textDark2: #3b4c3d;
+
+// primary => red
+$primaryColor: #991517;
+$primaryColorLight: rgba(153, 21, 23, 0.15);
+
+// secondary => green
+$secondaryColor: #428147;
+$secondaryColorBg: #428f47;
+$secondaryColorDark: #3b4c3d;
+$secondaryColorLight: rgba(102, 185, 107, 0.15);
+$secondaryColorText: #66b96b;
+
+// border radius
+$defaultBorderRadius: 5px;
+
+//shadow
+// $defaultShadowDown: 0 3px 10px rgba(6, 124, 216, 0.25);
+// $defaultShadowUp: 0 -3px 10px rgba(6, 124, 216, 0.25);
+// $defaultShadowLeft: -3px 0 10px rgba(6, 124, 216, 0.25);
+
+//font
+$RobotoFont: 'Roboto', sans-serif;
+$OpenSansFont: 'Open Sans', sans-serif;
+$RobotoWeights: (
+  'medium': 500,
+  'bold': 700,
+);
+$OpenSansWeights: (
+  'regular': 400,
+);
+
+//transition
+$defaultTransitionDuration: 0.4s;
+// $transitionDelay: 0.25s;
+// $topNavTransitionDelay: 0.15s;
