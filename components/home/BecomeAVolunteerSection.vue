@@ -3,6 +3,8 @@
     <b-container class="text-left">
       <b-row>
         <b-col
+          data-aos="fade-left"
+          data-aos-duration="800"
           cols="12"
           lg="6"
           class="order-1 order-lg-0 mt-0 mt-lg-5 pt-0 pt-lg-5"
@@ -24,7 +26,7 @@
               2+ years of experience working hands on campaigns
             </li>
           </ul>
-          <NuxtLink to="families" class="btn primary bordered"
+          <NuxtLink to="/families" class="btn primary bordered"
             >View All Causes</NuxtLink
           >
         </b-col>
@@ -135,8 +137,11 @@ section {
   align-items: center;
   transition: top $defaultTransitionDuration ease;
   box-shadow: 0 4px 20px 0 rgba(29, 49, 31, 0.15);
-  &:hover {
-    top: 48%;
+
+  @include media-sm {
+    &:hover {
+      top: 48%;
+    }
   }
   .position {
     background-color: $primaryColor;

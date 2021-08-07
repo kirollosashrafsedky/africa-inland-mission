@@ -14,14 +14,20 @@
             align-items-start
           "
         >
-          <h1 class="mb-4 roboto-medium">
+          <h1 class="mb-4 roboto-medium" data-aos="fade-left">
             Help Fund Tuition for missionary kids
           </h1>
-          <p class="mb-4 open-sans-regular">
+          <p
+            class="mb-4 open-sans-regular"
+            data-aos="fade-left"
+            data-aos-delay="100"
+          >
             While we do our good works let us not forget that the real solution
             lies in a world in which charity will have become unnecessary.
           </p>
-          <NuxtLink to="#" class="btn primary">Fund Tuition</NuxtLink>
+          <div data-aos="fade-left" data-aos-delay="200">
+            <NuxtLink to="#" class="btn primary">Fund Tuition</NuxtLink>
+          </div>
         </b-col>
       </b-row>
     </b-container>

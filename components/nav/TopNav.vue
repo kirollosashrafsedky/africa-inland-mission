@@ -8,7 +8,7 @@
             <NuxtLink to="/" class="nav-link">Home</NuxtLink>
           </li>
           <li class="nav-item">
-            <NuxtLink to="families" class="nav-link">Families</NuxtLink>
+            <NuxtLink to="/families" class="nav-link">Families</NuxtLink>
           </li>
           <li class="nav-item">
             <NuxtLink to="#" class="nav-link">Pages</NuxtLink>
@@ -17,10 +17,86 @@
             <NuxtLink to="#" class="nav-link">Shop</NuxtLink>
           </li>
           <li class="nav-item">
-            <NuxtLink to="contact" class="nav-link">Contact</NuxtLink>
+            <NuxtLink to="/contact" class="nav-link">Contact</NuxtLink>
           </li>
         </ul>
-        <a href="#" class="btn primary donate-btn">Donate Now</a>
+        <a
+          href="#"
+          class="btn donate-btn"
+          :class="$route.path == '/contact' ? 'secondary' : 'primary'"
+          @click.prevent="$bvModal.show('donate-modal')"
+          >Donate Now</a
+        >
+
+        <b-modal id="donate-modal" hide-footer hide-header centered>
+          <a
+            href="#"
+            class="btn close-btn"
+            @click.prevent="$bvModal.hide('donate-modal')"
+          >
+            <img
+              src="~/assets/imgs/svg/icons/close-modal.svg"
+              alt="Close"
+              class="img-fluid"
+          /></a>
+          <div class="modal-inner text-center">
+            <h2 class="mb-3 roboto-bold">Donate Today</h2>
+            <p class="mb-5 roboto-medium secondary-text sub-title">
+              EVERY DOLLAR COUNTS
+            </p>
+            <form>
+              <div class="form-group mb-3">
+                <input
+                  type="number"
+                  name="amount"
+                  class="form-control"
+                  placeholder="$"
+                />
+              </div>
+              <div class="form-group mb-3">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="form-group mb-3">
+                <input
+                  type="text"
+                  name="surname"
+                  class="form-control"
+                  placeholder="Enter your Surname"
+                />
+              </div>
+              <div class="form-group mb-3">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Enter your email address"
+                />
+              </div>
+              <div class="form-group mb-3">
+                <!-- <input type="text" name="additional-info" class="form-control" /> -->
+                <textarea
+                  name="additional-info"
+                  rows="3"
+                  class="form-control"
+                  placeholder="Additional information"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn primary bordered btn-block"
+                @click.prevent
+              >
+                Place Donation
+              </button>
+            </form>
+          </div>
+        </b-modal>
+
         <mobile-nav-toggler
           :hsl-color="hslColor"
           @click.native.prevent="mobileNavStatus = 'opened'"
@@ -99,6 +175,41 @@ nav {
       font-weight: map-get($RobotoWeights, 'bold');
     }
   }
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  opacity: 0.5;
+  padding: 10px;
+  &:hover {
+    opacity: 1;
+  }
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.modal-inner {
+  background: #fff;
+  border-radius: 10px;
+  padding: 40px 20px 20px;
+
+  @include media-sm {
+    padding: 50px 40px 40px;
+    margin: 0 5px;
+  }
+}
+
+.form-control {
+  height: 45px;
+  font-family: $OpenSansFont;
+}
+
+textarea.form-control {
+  height: auto;
 }
 
 @include media-lg {

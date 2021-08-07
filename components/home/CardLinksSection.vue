@@ -2,7 +2,7 @@
   <section>
     <b-container>
       <b-row class="align-items-stretch">
-        <b-col cols="12" lg="4" class="mb-3 mb-lg-0">
+        <b-col cols="12" lg="4" class="mb-3 mb-lg-0" data-aos="fade-up">
           <div class="card">
             <img
               src="~/assets/imgs/jpg/give-donation-card.jpg"
@@ -18,7 +18,13 @@
             </div>
           </div>
         </b-col>
-        <b-col cols="12" lg="4" class="mb-3 mb-lg-0">
+        <b-col
+          cols="12"
+          lg="4"
+          class="mb-3 mb-lg-0"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           <div class="card">
             <img
               src="~/assets/imgs/jpg/contact-us-card.jpg"
@@ -33,8 +39,15 @@
               </p>
               <NuxtLink to="#" class="pb-1 learnmore-link">LEARN MORE</NuxtLink>
             </div>
-          </div> </b-col
-        ><b-col cols="12" lg="4" class="mb-3 mb-lg-0">
+          </div>
+        </b-col>
+        <b-col
+          cols="12"
+          lg="4"
+          class="mb-3 mb-lg-0"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <div class="card">
             <img
               src="~/assets/imgs/jpg/become-a-volunteer-card.jpg"

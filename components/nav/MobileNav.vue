@@ -16,26 +16,37 @@
           </NuxtLink>
         </li>
         <li class="nav-item">
-          <NuxtLink to="families" class="nav-link" @click.native="closeNav">
+          <NuxtLink to="/families" class="nav-link" @click.native="closeNav">
             Families
           </NuxtLink>
         </li>
         <li class="nav-item">
-          <NuxtLink to="families" class="nav-link" @click.native="closeNav">
+          <NuxtLink to="/families" class="nav-link" @click.native="closeNav">
             Pages
           </NuxtLink>
         </li>
         <li class="nav-item">
-          <NuxtLink to="families" class="nav-link" @click.native="closeNav">
+          <NuxtLink to="/families" class="nav-link" @click.native="closeNav">
             Shop
           </NuxtLink>
         </li>
         <li class="nav-item">
-          <NuxtLink to="contact" class="nav-link" @click.native="closeNav">
+          <NuxtLink to="/contact" class="nav-link" @click.native="closeNav">
             Contact
           </NuxtLink>
         </li>
       </ul>
+      <div class="my-4 px-3">
+        <a
+          href="#"
+          class="btn primary donate-btn btn-block"
+          @click.prevent="
+            $emit('nav-closed')
+            $bvModal.show('donate-modal')
+          "
+          >Donate Now</a
+        >
+      </div>
     </div>
   </transition>
 </template>
@@ -93,6 +104,7 @@ export default {
   background-color: #fff;
   box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.25);
   z-index: 2000;
+  overflow: auto;
   @include media-sm {
     max-width: 400px;
   }

@@ -23,7 +23,7 @@ export default {
   css: ['~assets/scss/main.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins:  ['~/plugins/vue-fragment.js'],
+  plugins:  ['~/plugins/vue-fragment.js', { src: "~/plugins/aos.client", ssr: false }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -47,6 +47,9 @@ export default {
     bootstrapVueCSS: false, // Or `bvCSS: false`
   
     components:['BContainer', 'BRow', 'BCol', 'BNav', 'BNavItem'],
+    componentPlugins: [
+      'ModalPlugin'
+    ],
   },
   
   // PWA module configuration: https://go.nuxtjs.dev/pwa

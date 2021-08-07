@@ -2,13 +2,26 @@
   <section>
     <b-container class="text-left">
       <b-row class="align-items-start">
-        <b-col cols="12" lg="5" xl="4" class="mb-4 mb-lg-0">
+        <b-col
+          cols="12"
+          lg="5"
+          xl="4"
+          class="mb-4 mb-lg-0"
+          data-aos="fade-left"
+          data-aos-duration="500"
+        >
           <p class="mb-2 roboto-medium secondary-text sub-title">
             ALL A ROUND THE WORLD
           </p>
           <h2 class="roboto-medium">Our Mission is to Help The Helpless</h2>
         </b-col>
-        <b-col cols="12" lg="7" xl="8">
+        <b-col
+          cols="12"
+          lg="7"
+          xl="8"
+          data-aos="fade-left"
+          data-aos-duration="800"
+        >
           <blockquote class="my-4 open-sans-regular text-dark1">
             “In the end, though, maybe we must all give up trying to pay back
             the people in this world who sustain our lives. In the end, maybe

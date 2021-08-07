@@ -6,14 +6,19 @@
       </p>
       <h2 class="mb-5">Our Agency Goals</h2>
       <div class="grid">
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-duration="800">
           <img src="~/assets/imgs/png/goals/business.png" alt="Business" />
           <h4>Business</h4>
           <NuxtLink to="#" class="pb-1 learnmore-link stretched-link"
             >LEARN MORE</NuxtLink
           >
         </div>
-        <div class="card">
+        <div
+          class="card"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="50"
+        >
           <img
             src="~/assets/imgs/png/goals/education.png"
             alt="Quality Education"
@@ -23,14 +28,24 @@
             >LEARN MORE</NuxtLink
           >
         </div>
-        <div class="card">
+        <div
+          class="card"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="100"
+        >
           <img src="~/assets/imgs/png/goals/health.png" alt="Good Health" />
           <h4>Good Health</h4>
           <NuxtLink to="#" class="pb-1 learnmore-link stretched-link"
             >LEARN MORE</NuxtLink
           >
         </div>
-        <div class="card">
+        <div
+          class="card"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="150"
+        >
           <img
             src="~/assets/imgs/png/goals/partnerships.png"
             alt="Partnerships"
@@ -40,7 +55,12 @@
             >LEARN MORE</NuxtLink
           >
         </div>
-        <div class="card">
+        <div
+          class="card"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="200"
+        >
           <img src="~/assets/imgs/png/goals/devices.png" alt="Devices" />
           <h4>Devices</h4>
           <NuxtLink to="#" class="pb-1 learnmore-link stretched-link"

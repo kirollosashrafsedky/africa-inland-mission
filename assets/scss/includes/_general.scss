@@ -23,14 +23,9 @@ body {
   font-size: 14px;
   line-height: 20px;
   min-width: 320px;
-  // height: 100vh;
-  // height: calc(var(--vh, 1vh) * 100);
-  // position: relative;
-  // color: $primaryColorDark;
   &.overflow-bg {
     #main-fade-overflow {
       opacity: 1;
-      // display: block;
     }
   }
 }
@@ -202,4 +197,12 @@ a.learnmore-link {
 .container-sm {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.light-bg {
+  background-color: $textLight;
+}
+
+#__layout {
+  overflow-x: hidden;
 }

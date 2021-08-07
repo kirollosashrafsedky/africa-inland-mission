@@ -1,6 +1,6 @@
 <template>
   <b-container fluid>
-    <div class="wrapper">
+    <div class="wrapper" data-aos="fade-up">
       <div
         class="
           d-flex

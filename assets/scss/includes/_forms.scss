@@ -11,4 +11,16 @@
     border-color: $secondaryColor;
     background-color: #f2f5f3;
   }
+  &::-webkit-input-placeholder {
+    font-weight: 100 !important;
+    font-family: $OpenSansFont;
+  }
+  &::-ms-input-placeholder {
+    font-weight: 100 !important;
+    font-family: $OpenSansFont;
+  }
+  &::placeholder {
+    font-weight: 100 !important;
+    font-family: $OpenSansFont;
+  }
 }

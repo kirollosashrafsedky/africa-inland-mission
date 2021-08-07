@@ -15,7 +15,7 @@
 <script>
 import BecomeAVolunteerSection from '~/components/home/BecomeAVolunteerSection.vue'
 import CardLinksSection from '~/components/home/CardLinksSection.vue'
-import FirstQuoteSection from '~/components/home/FirstQuoteSection.vue'
+import FirstQuoteSection from '~/components/common/FirstQuoteSection.vue'
 import GoalsSection from '~/components/home/GoalsSection.vue'
 import HomeHeader from '~/components/home/HomeHeader.vue'
 import HomeInlineForm from '~/components/home/HomeInlineForm.vue'

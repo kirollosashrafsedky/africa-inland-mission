@@ -1,6 +1,6 @@
 <template>
   <section>
-    <b-container class="text-center">
+    <b-container class="text-center" data-aos="fade-up" data-aos-duration="800">
       <p class="mb-4 roboto-medium secondary-text sub-title">
         TRUSTED BY THE WORLD'S BEST TEAM
       </p>
